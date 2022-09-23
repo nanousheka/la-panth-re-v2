@@ -1,3 +1,9 @@
+.presentation__welcome-message {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -119,14 +125,18 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
+.navbar a {
+    color: #CB4B10;
+    font-size: 14px;
+    font-weight: 800;
+}
+
 .d-bloc .a-btn,
-.d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
 .d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
-.d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
 .d-bloc h4 a,
@@ -218,7 +228,6 @@ a:hover {
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
-.l-bloc .navbar a,
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
@@ -640,7 +649,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -651,7 +659,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -677,7 +685,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -704,16 +712,18 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+h2{
+    color: #CB4B10;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -723,11 +733,12 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: white;
+    font-weight: 800;
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -736,7 +747,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -752,10 +763,7 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
+
 
 .bold-link {
     font-weight: 900;
@@ -771,20 +779,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #CB4B10;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f3976c!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #364577;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #CB4B10!important;
     color: #FFFFFF!important;
 }
 
@@ -797,11 +805,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #CB4B10!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #CB4B10!important;
 }
 
 .icon-dark-slate-blue {
@@ -818,11 +826,12 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+    
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1048,65 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.bloc-2-1-temoignage{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+.bloc-2-1-temoignage_quote{
+    quotes: "&ldquo\00A0" "\00A0&rdquo";
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    color: #364577!important;
+}
+
+.bloc-2-1-temoignage_auteur{
+    Font-size: 18px;
+}
+
+#bloc-3-what-i-do p{
+    font-size: 22px;
+}
+
+.a11y-nav{
+    position: absolute;
+    top: -10em;
+    z-index: 100;
+    width: 100%;
+}
+
+.a11y-nav a{
+    background-color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.a11y-nav a:focus, .a11y-nav a:hover{
+    top: 10em;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+*:focus{
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #364577;
+}
+
+#bloc-6 p{
+    color: white;
+}
+
+#bloc-7 h2{
+    color: #364577;
 }
